@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.user-card {
+  background-color: #198754;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px #0000001a;
+  text-align: center;
+}
+
+.user-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.user-card h2 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.user-card .role {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.user-card p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Role-specific styling */
+.admin {
+  border-top: 4px solid #007bff;
+}
+
+.manager {
+  border-top: 4px solid #28a745;
+}
+
+.attendant {
+  border-top: 4px solid #ffc107;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+}
